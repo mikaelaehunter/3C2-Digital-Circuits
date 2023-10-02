@@ -1,0 +1,8 @@
+# Add your Python code here. E.g.
+from microbit import *
+
+while True:
+        pin1.write_digital(1); #value subject to change
+        pin2.write_digital(1);
+        print(pin5.read_digital ());
+        sleep (1000);
