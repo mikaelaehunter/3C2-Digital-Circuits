@@ -1,0 +1,27 @@
+ Add your Python code here. E.g.
+from microbit import *
+
+# pin 0 = test A
+# pin 1 = test B
+# pin 16 = logic pin (reads the resulting value from the logic gate being applied to test A and B)
+# pin 9 = verify pin (uses the value read from pin 16 to verify 1 or 0 with the LED on or off)
+
+while True:
+    bistable SR latch code
+    S = pin0.write_digital(0);
+    R = pin1.write_digital(0);
+    verify = pin16.read_digital();
+    pin9.write_digital(verify);
+    
+    #NAND-gated SR latch code
+    S = pin0.write_digital(0);
+    R = pin1.write_digital(0);
+    En = pin2.write_digital(0);
+    verify = pin16.read_digital();
+    pin9.write_digital(verify);
+    
+    #D Latch Code
+    D = pin0.write_digital(0);
+    En = pin2.write_digital(1);
+    verify = pin16.read_digital();
+    pin9.write_digital(verify);
