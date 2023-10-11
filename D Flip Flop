@@ -1,0 +1,18 @@
+# Add your Python code here. E.g.
+from microbit import *
+
+
+while True:
+    #initial state
+    CLK = pin0.write_digital(0);
+    sleep(2000);
+    #Q = 0, Q' = 1
+    
+    start = pin2.write_digital(1);
+    
+    #set circuit (clock transitions from 0 to 1)
+    CLK = pin0.write_digital(0);
+    D = pin1.write_digital(1);
+    logic = pin16.read_digital();
+    verify = pin9.write_digital(logic);
+    sleep(2000);
