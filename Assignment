@@ -1,0 +1,338 @@
+# Add your Python code here. E.g.
+from microbit import *
+
+#test case #1 = 00 + 00 = 000 (0 + 0 = 0)
+A1 = pin2.write_digital(0);
+A0 = pin0.write_digital(0);
+B1 = pin8.write_digital(0);
+B0 = pin1.write_digital(0);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 0 and S1 == 0 and S0 == 0:
+    print("CORRECT! 0 + 0 = 0");
+else :
+    print("INCORRECT! 0 + 0 != 0"); 
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #2 = 00 + 01 = 001 (0 + 1 = 1)
+A1 = pin2.write_digital(0);
+A0 = pin0.write_digital(0);
+B1 = pin8.write_digital(0);
+B0 = pin1.write_digital(1);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 0 and S1 == 0 and S0 == 1:
+    print("CORRECT! 0 + 1 = 1");
+else :
+    print("INCORRECT! 0 + 1 != 1"); 
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #3 = 00 + 10 = 010 (0 + 2 = 2)
+A1 = pin2.write_digital(0);
+A0 = pin0.write_digital(0);
+B1 = pin8.write_digital(1);
+B0 = pin1.write_digital(0);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 0 and S1 == 1 and S0 == 0:
+    print("CORRECT! 0 + 2 = 2");
+else :
+    print("INCORRECT! 0 + 2 != 2"); 
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #4 = 00 + 11 = 011 (0 + 3 = 3)
+A1 = pin2.write_digital(0);
+A0 = pin0.write_digital(0);
+B1 = pin8.write_digital(1);
+B0 = pin1.write_digital(1);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 0 and S1 == 1 and S0 == 1:
+    print("CORRECT! 0 + 3 = 3");
+else :
+    print("INCORRECT! 0 + 3 != 3"); 
+    
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+    
+#-------------------------------------
+#test case #5 = 01 + 00 = 001 (1 + 0 = 1)
+A1 = pin2.write_digital(0);
+A0 = pin0.write_digital(1);
+B1 = pin8.write_digital(0);
+B0 = pin1.write_digital(0);
+
+#verify pins
+
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 0 and S1 == 0 and S0 == 1:
+    print("CORRECT! 1 + 0 = 1");
+else :
+    print("INCORRECT! 1 + 0 != 1");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #6 = 01 + 01 = 010 (1 + 1 = 2)
+A1 = pin2.write_digital(0);
+A0 = pin0.write_digital(1);
+B1 = pin8.write_digital(0);
+B0 = pin1.write_digital(1);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 0 and S1 == 1 and S0 == 0:
+    print("CORRECT! 1 + 1 = 2");
+else :
+    print("INCORRECT! 1 + 1 != 2");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #7 = 01 + 10 = 011 (1 + 2 = 3)
+A1 = pin2.write_digital(0);
+A0 = pin0.write_digital(1);
+B1 = pin8.write_digital(1);
+B0 = pin1.write_digital(0);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 0 and S1 == 1 and S0 == 1:
+    print("CORRECT! 1 + 2 = 3");
+else :
+    print("INCORRECT! 1 + 2 != 3");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #8 = 01 + 11 = 100 (1 + 3 = 4)
+A1 = pin2.write_digital(0);
+A0 = pin0.write_digital(1);
+B1 = pin8.write_digital(1);
+B0 = pin1.write_digital(1);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 1 and S1 == 0 and S0 == 0:
+    print("CORRECT! 1 + 3 = 4");
+else :
+    print("INCORRECT! 1 + 3 != 4");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #9 = 10 + 00 = 010 (2 + 0 = 2)
+A1 = pin2.write_digital(1);
+A0 = pin0.write_digital(0);
+B1 = pin8.write_digital(0);
+B0 = pin1.write_digital(0);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 0 and S1 == 1 and S0 == 0:
+    print("CORRECT! 2 + 0 = 2");
+else :
+    print("INCORRECT! 2 + 0 != 2");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #10 = 10 + 01 = 011 (2 + 1 = 3)
+A1 = pin2.write_digital(1);
+A0 = pin0.write_digital(0);
+B1 = pin8.write_digital(0);
+B0 = pin1.write_digital(1);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 0 and S1 == 1 and S0 == 1:
+    print("CORRECT! 2 + 1 = 3");
+else :
+    print("INCORRECT! 2 + 1 != 3");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #11 = 10 + 10 = 100 (2 + 2 = 4)
+A1 = pin2.write_digital(1);
+A0 = pin0.write_digital(0);
+B1 = pin8.write_digital(1);
+B0 = pin1.write_digital(0);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 1 and S1 == 0 and S0 == 0:
+    print("CORRECT! 2 + 2 = 4");
+else :
+    print("INCORRECT! 2 + 2 != 4");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #12 = 10 + 11 = 101 (2 + 3 = 5)
+A1 = pin2.write_digital(1);
+A0 = pin0.write_digital(0);
+B1 = pin8.write_digital(1);
+B0 = pin1.write_digital(1);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 1 and S1 == 0 and S0 == 1:
+    print("CORRECT! 2 + 3 = 5");
+else :
+    print("INCORRECT! 2 + 3 != 5");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #13 = 11 + 00 = 011 (3 + 0 = 3)
+A1 = pin2.write_digital(1);
+A0 = pin0.write_digital(1);
+B1 = pin8.write_digital(0);
+B0 = pin1.write_digital(0);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 0 and S1 == 1 and S0 == 1:
+    print("CORRECT! 3 + 0 = 3");
+else :
+    print("INCORRECT! 3 + 0 != 3");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+ 
+#-------------------------------------
+#test case #14 = 11 + 01 = 100 (3 + 1 = 4)
+A1 = pin2.write_digital(1);
+A0 = pin0.write_digital(1);
+B1 = pin8.write_digital(0);
+B0 = pin1.write_digital(1);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 1 and S1 == 0 and S0 == 0:
+    print("CORRECT! 3 + 1 = 4");
+else :
+    print("INCORRECT! 3 + 1 != 4");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #15 = 11 + 10 = 101 (3 + 2 = 5)
+A1 = pin2.write_digital(1);
+A0 = pin0.write_digital(1);
+B1 = pin8.write_digital(1);
+B0 = pin1.write_digital(0);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 1 and S1 == 0 and S0 == 1:
+    print("CORRECT! 3 + 2 = 5");
+else :
+    print("INCORRECT! 3 + 2 != 5");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
+
+#-------------------------------------
+#test case #16 = 11 + 11 = 110 (3 + 3 = 6)
+A1 = pin2.write_digital(1);
+A0 = pin0.write_digital(1);
+B1 = pin8.write_digital(1);
+B0 = pin1.write_digital(1);
+
+#verify pins
+C = pin12.read_digital();
+S1 = pin16.read_digital();
+S0 = pin9.read_digital();
+
+if C == 1 and S1 == 1 and S0 == 0:
+    print("CORRECT! 3 + 3 = 6");
+else :
+    print("INCORRECT! 3 + 3 != 6");
+
+sleep(2000);
+print("Next Test Case...");
+sleep(2000);
